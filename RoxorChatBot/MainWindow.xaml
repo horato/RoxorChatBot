@@ -1,0 +1,20 @@
+﻿<Controls:MetroWindow x:Class="RoxorChatBot.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="ChatBot for #RoXoRk0 by horato" Height="638.075" Width="665.701">
+    <Grid Background="LightBlue">
+        <TextBox x:Name="tbSongAddress" HorizontalAlignment="Left" Height="27" Margin="375,28,0,0" Visibility="Hidden" Text="" VerticalAlignment="Top" Width="240" BorderThickness="3"/>
+        <TextBox x:Name="tbMsg" HorizontalAlignment="Left" Height="94" Margin="10,477,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="638" BorderThickness="3"/>
+        <ListView x:Name="tbVideos" HorizontalAlignment="Left" Height="185" Margin="10,60,0,0" VerticalAlignment="Top" Width="348" BorderThickness="3"/>
+        <TextBox x:Name="tbVideosQueue" IsReadOnly="True" HorizontalAlignment="Left" Height="149" Margin="370,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="278" BorderThickness="3"/>
+        <Button Name="Connect_Button" Content="Connect" HorizontalAlignment="Left" Margin="60,23,0,0" VerticalAlignment="Top" Width="120" Click="Connect_Click" Background="Black" Foreground="White"/>
+        <Button Name="addSong" Content="+" HorizontalAlignment="Left" Margin="620,28,0,0" VerticalAlignment="Top" Width="28" Background="Black" Foreground="White" IsEnabled="False" Click="addSong_Click" Height="27"/>
+        <TextBlock x:Name="tbStatus" HorizontalAlignment="Left" Margin="467,5,0,0" TextWrapping="Wrap" Text="Not connected" VerticalAlignment="Top" Width="132" Height="18"/>
+        <Button Name="Send_Button" Content="Send message" HorizontalAlignment="Left" Margin="528,576,0,0" VerticalAlignment="Top" Width="120" Click="Send_Click" Foreground="#FFF9F9F9" Background="Black"/>
+        <Button Name="startSending" Content="Start" HorizontalAlignment="Left" Margin="375,223,0,0" VerticalAlignment="Top" Width="90" Foreground="#FFF9F9F9" Background="Black" IsEnabled="False" Click="startSending_Click"/>
+        <Button Name="stopSending" Content="Stop" HorizontalAlignment="Left" Margin="558,223,0,0" VerticalAlignment="Top" Width="90" Foreground="#FFF9F9F9" Background="Black" IsEnabled="False" Click="stopSending_Click"/>
+        <Button x:Name="Disconnect_Button" Content="Disconnect" HorizontalAlignment="Left" Margin="185,23,0,0" VerticalAlignment="Top" Width="120" Click="Disconnect_Click" Foreground="#FFF9F9F9" Background="Black"/>
+        <TextBox x:Name="tbReceivedMsg" IsReadOnly="True" HorizontalAlignment="Left" Height="182" Margin="10,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="638" BorderThickness="3" VerticalScrollBarVisibility="Visible"/>
+    </Grid>
+</Controls:MetroWindow>
